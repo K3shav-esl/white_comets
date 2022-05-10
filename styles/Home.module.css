@@ -1,6 +1,9 @@
 .container {
   padding: 0 2rem;
+  background-color: black;
+  color: white;
 }
+
 
 .main {
   min-height: 100vh;
@@ -113,4 +116,54 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+
+@keyframes loadingOpacity {
+0%{
+  opacity: 0;
+
+  visibility: visible ;
+}
+50%{
+  opacity: 1;
+
+}
+100%{
+  opacity: 0;
+  visibility: hidden;
+
+}
+}
+
+.nameCredit{
+  color: white;
+  text-shadow: none;
+  animation: loadingOpacity ease-in-out;
+  animation-duration: 5s;
+  opacity:0;
+}
+
+.welcomeCredit{
+  color: white;
+  text-shadow: none;
+  animation: loadingOpacity ease-in-out;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  opacity:0;
+}
+
+.mainNav{
+  display: flex;
+}
+.mainNav ul{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+
+}
+.mainNav ul li{
+  margin: 0 1rem;
+  border: white 1px solid;
+  padding: 1rem;
 }
