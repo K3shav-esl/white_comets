@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import MainCard from './components/MainCard'
 import Pfp from '../public/cometPfp.svg'
 
 export default function Main() {
@@ -20,8 +19,6 @@ export default function Main() {
                 </ul>
             </nav>
             <section className='cometSection'>
-                <MainCard source={Pfp} name='Comet Kartik' desc='Comet Kartik, the comet of eSports in this comet cluster. A very strange comet, sometimes extra cold, sometimes very fiery.' />
-
             </section>
         </div>
     )
